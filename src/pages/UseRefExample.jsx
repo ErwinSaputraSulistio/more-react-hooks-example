@@ -1,7 +1,8 @@
 import { useRef } from "react"
 
 // Stop using useState and onChange for input, because it'll re-render each time you type.
-// useRef is a better solution to use, when you're not using the input variable many times.
+// useRef is a better solution to use, when you only need to store values, but don't need any page re-renders.
+// useRef is also recommended to be used, when your values are only used once.
 // For an use-case example of useRef, see below.
 export default function UseRefExample() {
     document.title = "React - useRef Example"
